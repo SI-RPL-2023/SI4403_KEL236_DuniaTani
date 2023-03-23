@@ -10,11 +10,13 @@ Pada tugas besar RPL ini kami membuat sebuah website bernama `Dunia Tani`. `Duni
 ## Tentang Kami
 Kami merupakan Kelompok236 yang berasal dari kelas SI-44-03, program studi S1 Sistem Informasi, Telkom University. Kami beranggotakan 5 orang, diantaranya:
 
--   Naoval (1202200239)
--   Kemal Aziz (1202204329)
--   Stefanus Ricardo Mascarenhas (1202204004)
--   Rizky Bernawan (1202202278)
--   Novia Pindan Giang  (1202204065)
+| Nama                              | Nim          | Role               |
+| --------------------------------- | ------------| -------------------|
+| Naoval                            | 1202200239  | Project Manager    |
+| Stefanus Ricardo Mascarenhas     | 1202204004  | Analyst            |
+| Kemal Aziz                        | 1202204329  | Programer          |
+| Rizky Bernawan                    | 1202202278  | Programer          |
+| Novia Pindan Giang                | 1202204065  | Programer          |
 
 ## Repository Structure
 
