@@ -9,7 +9,7 @@
             <img src="asset/banner.png" alt="" class="header__banner">
             <div class="header__box">
                 <h1 class="header__title">We teach you how to grow very fresh produce</h1>
-                <h2 class="header__subtitle">learning about how to plant, how to choose good seeds, the selection
+                <h2 class="header__subtitle">learn how to plant, how to choose good seeds, the selection
                     of the latest tools and technology for agricultural development in Indonesia.
                 </h2>
                 <div class="header__box-btn">
