@@ -36,7 +36,6 @@
                         <p>Event tahunan yang diadakan Kementrian Pertanian untuk mengenalkan pasar tradisional ke mall-mall</p>
                         <span>Virtual Event</span>
                         <span>06 Feb 2022</span>
-                        <a href="" class="cta">See Detail</a>
                         <a href="/detailevent" class="cta">See Detail</a>
                     </div>
             </div>

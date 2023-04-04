@@ -26,7 +26,8 @@
                      <div class="col-md-6">
                         <div class="titlepage">
                         <?php
-                           echo '<h2>Pasar Tani Goes to Mall by Kementrian Pertanian</h2><br><br>';
+                           echo '<h1>Pasar Tani Goes to Mall by Kementrian Pertanian</h1><br>';
+                           echo '<h3>19 Oktober 2022</h3><br><br>';
                            echo '<p>"Dunia Tani goes to mall" adalah tema yang menunjukkan upaya sektor pertanian untuk memperkenalkan diri dan produk-produknya kepada masyarakat luas melalui pusat perbelanjaan modern. Platform "dunia tani" menjadi salah satu cara untuk mempromosikan sektor ini secara lebih terbuka dan inovatif.</p>';
                            echo '<p>Dalam memperkenalkan platform "dunia tani" ke khalayak publik melalui mall, sektor pertanian dapat memanfaatkan teknologi dan media sosial untuk memperluas jangkauan dan meningkatkan efektivitas promosi. Dengan demikian, sektor pertanian semakin mampu menarik minat dan kepercayaan konsumen, serta meningkatkan pangsa pasarnya.</p>';
                            echo '<p>Melalui promosi yang kreatif dan inovatif di pusat perbelanjaan, sektor pertanian juga dapat menunjukkan bahwa pertanian bukan lagi sektor yang ketinggalan zaman dan tidak menarik. Sektor ini menawarkan produk-produk berkualitas tinggi dengan harga yang kompetitif, serta memegang prinsip-prinsip keberlanjutan dan keseimbangan ekologi.</p>';
