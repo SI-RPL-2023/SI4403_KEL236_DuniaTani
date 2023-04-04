@@ -28,7 +28,7 @@
                         <p>Acara gelar produk pertanian yang menjual berbagai macam buah, sayur, produk pangan, produk perkebunan, makanan olahan, dll</p>
                         <span>Virtual Event</span>
                         <span>21 Jan 2023</span>
-                        <a href="" class="cta">See Detail</a>
+                        <a href="/detailevent" class="cta">See Detail</a>
                     </div>
                     <div class="event-card">
                         <img src="../asset/event-2.jpeg" alt="">
@@ -37,6 +37,7 @@
                         <span>Virtual Event</span>
                         <span>06 Feb 2022</span>
                         <a href="" class="cta">See Detail</a>
+                        <a href="/detailevent" class="cta">See Detail</a>
                     </div>
             </div>
         </section>
