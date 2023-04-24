@@ -7,6 +7,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\DetailEventController;
 use App\Http\Controllers\CommunityController;
+use App\Http\Controllers\DetailCommunityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,4 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/event', [EventController::class, 'displayEvent']);
 Route::get('/detailevent', [DetailEventController::class, 'displayDetailEvent']);
 Route::get('/community', [CommunityController::class, 'displayCommunity']);
+Route::get('/detailcommunity', [DetailCommunityController::class, 'displayDetailCommunity']);
