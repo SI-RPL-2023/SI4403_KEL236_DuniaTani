@@ -18,7 +18,7 @@
                     your starting point is, we aim to support every idea and 
                     create a big impact, and it starts with you.
                 </p>
-                <a href="" class="cta community-cta">Explore Community</a>
+                <a href="/detailcommunity" class="cta community-cta">Explore Community</a>
             </div>
             <img src="../asset/com-banner.png" alt="" class="community-banner">
         </header>
