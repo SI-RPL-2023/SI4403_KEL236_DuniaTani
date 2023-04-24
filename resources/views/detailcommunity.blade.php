@@ -30,8 +30,8 @@
             <img src="../asset/detailcommunity.png" alt="" class="detailcommunity-banner" width="300" height="200">
         </header>
   </div>
-        
-  <!-- Community Cards -->
+
+  <!-- Join Community Cards -->
   <div class="container my-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
