@@ -483,6 +483,17 @@ body {
     /* object-fit: cover; */
 }
 
+.detailcommunity-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #middle {
+    position: relative;
+  }
+
 .course {
     display: grid;
     grid-template-columns: 1fr;

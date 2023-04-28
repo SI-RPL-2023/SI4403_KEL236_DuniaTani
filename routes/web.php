@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\DetailEventController;
 use App\Http\Controllers\CommunityController;
 use App\Http\Controllers\DetailCommunityController;
+use App\Http\Controllers\CourseController;
 
 /*
 |--------------------------------------------------------------------------
