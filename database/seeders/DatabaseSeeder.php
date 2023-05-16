@@ -43,6 +43,14 @@ class DatabaseSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s')
         ]);
         Gurutani::create([
+            'name' => 'sally',
+            'email' => 'sallycantik@gmail.com',
+            'username' => 'sallycantik123',
+            'password' => bcrypt('12345'),
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        Gurutani::create([
             'name' => 'dadan',
             'email' => 'dadan@gmail.com',
             'username' => 'dadan123',
