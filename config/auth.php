@@ -40,6 +40,14 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'gurutani' => [
+            'driver' => 'session',
+            'provider' => 'gurutanis'
+        ],
+        'user' => [
+            'driver' => 'session',
+            'provider' => 'users'
+        ]
     ],
 
     /*
@@ -63,6 +71,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'gurutanis' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Gurutanis::class,
         ],
 
         // 'users' => [

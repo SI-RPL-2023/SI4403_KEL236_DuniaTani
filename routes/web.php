@@ -1,12 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuruController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\DetailEventController;
 use App\Http\Controllers\CommunityController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DetailCommunityController;
 use App\Http\Controllers\CourseController;
 
