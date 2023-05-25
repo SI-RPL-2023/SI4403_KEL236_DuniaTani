@@ -39,7 +39,7 @@
                 <div class="course-content">
                     @foreach ($course as $crs)
                         <div class="course__card">
-                            <img src="../{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="thumbnail"
+                            <img src="../storage/thumbnails/products/{{ $crs->thumbnail }}" alt="thumbnail"
                                 class="course__img">
                             <h1>{{ $crs->title }}</h1>
                             <p>{{ Str::limit($crs->description) }}</p>

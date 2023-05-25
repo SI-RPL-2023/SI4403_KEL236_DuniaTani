@@ -15,7 +15,8 @@
         </header>
         <section class="checkout-box">
             <div class="checkout-card course__card">
-                <img src="{{ asset('storage/thumbnails/products/'.$course->thumbnail) }}" alt="" class="course__img">
+                <img src="../storage/thumbnails/products/{{ $course->thumbnail }}" alt="thumbnail"
+                                class="course__img">
                 <h1>{{ $course->title }}</h1>
                 <p>{{ $course->description }}</p>
                 <div class="course__gutter"></div>

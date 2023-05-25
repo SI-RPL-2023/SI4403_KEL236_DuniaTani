@@ -49,7 +49,7 @@ class CourseController extends Controller
         // image
         $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
         $thumbnail = $thumbnail . '-' . time() . '.' . $request->file('thumbnail')->extension();
-        $request->file('thumbnail')->storeAs('public/thumbnails/products/', $thumbnail);
+        $request->thumbnail->move(public_path('storage/thumbnails/products'), $thumbnail);
         if($request->price > 0 ){
             Course::create([
                 'guruTani_id' => auth()->user()->id,
@@ -198,10 +198,92 @@ class CourseController extends Controller
             'course' => $course
         ]);
     }
+       /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Course  $course
+     * @return \Illuminate\Http\Response
+     */
+    public function displayCoursePayment(Course $course){
+        return view('course-payment', [
+            'title' => 'Course Payment',
+            'course' => $course
+        ]);
+    }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Course  $course
+     * @return \Illuminate\Http\Response
+     */
+    public function PaymentMethod(Request $request){
+        // evidence
+        $evidence = explode('.', $request->file('evidence')->getClientOriginalName())[0];
+        $evidence = $evidence . '-' . time() . '.' . $request->file('evidence')->extension();
+        $request->file('evidence')->storeAs('public/evidences/products/', $evidence);
+
+        // ktp
+        $ktp = explode('.', $request->file('ktp')->getClientOriginalName())[0];
+        $ktp = $ktp . '-' . time() . '.' . $request->file('ktp')->extension();
+        $request->file('ktp')->storeAs('public/ktps/products/', $ktp);
+
+
+        if($request->ktp != null && $request->evidence != null) {
+            Order::create([
+                'guruTani_id' => $request->guruTani_id,
+                'course_id'=> $request->course_id,
+                'user_id'=> auth()->user()->id,
+                'cover'=> $request->cover,
+                'ktp'=> $ktp,
+                'title'=> $request->title,
+                'status'=> 'pending',
+                'type'=> $request->type,
+                'price'=> $request->price,
+                'evidence' => $evidence,
+            ]);
+        }
+        return redirect('/user/order');
+
+    }
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
+    public function displayCourseSuccess(){
+        return view('course-success', [
+            'title' => 'Course Checkout Successful'
+        ]);
+    }
+
+    public function displayclass(){
+        $course = Course::where('guruTani_id', auth()->user()->id)->get();
+        return view('guru/guru-myclass', [
+            'title' => 'Course',
+            'course' => $course
+        ]);
+    }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Course  $course
+     * @return \Illuminate\Http\Response
+     */
+    public function editclass(){
+        $course = Course::where('guruTani_id', auth()->user()->id)->first();
+        return view('guru/guru-editclass', [
+            'title' => 'Edit a Class',
+            'course' => $course
+        ]);
+    }
+
+    public function accessvideo(){
+        $order = Order::where('user_id', auth()->user()->id)->first();
+        return view('course-access', [
+            'title' => 'Pentingnya Penggunaan Teknologi Pertanian',
+            'order' => $order
+        ]);
+    }
 }

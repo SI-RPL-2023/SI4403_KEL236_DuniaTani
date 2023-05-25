@@ -20,7 +20,8 @@
                 <div class="course-detail-desc">
                     <h2 class="course-detail-subtle">COURSE DETAIL</h2>
                     <h1 class="course-detail-title">{{ $course->title }}</h1>
-                    <img src="{{ asset('storage/thumbnails/products/'.$course->thumbnail) }}" alt="aset">
+                    <img src="../storage/thumbnails/products/{{ $course->thumbnail }}" alt="thumbnail"
+                                class="course__img">
                     <p>
                         {{ $course->description }}
                     </p>
